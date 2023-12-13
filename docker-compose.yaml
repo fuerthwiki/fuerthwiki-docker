@@ -7,9 +7,10 @@
 version: '3'
 services:
   mediawiki:
-    image: mediawiki:1.35
+    image: fuerthwiki
     container_name: fuerthwiki
-    build: .
+    build:
+      dockerfile: ./fuerthwiki.Dockerfile
     restart: always
     ports:
       - 8080:80
@@ -28,6 +29,8 @@ services:
     image: mariadb
     container_name: mariadb
     restart: always
+    ports:
+      - 3306:3306
     environment:
       # @see https://phabricator.wikimedia.org/source/mediawiki/browse/master/includes/DefaultSettings.php
       MYSQL_DATABASE: fuerthwiki

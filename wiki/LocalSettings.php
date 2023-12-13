@@ -53,7 +53,7 @@ $wgEmailAuthentication = true;
 
 ## Database settings
 $wgDBtype = "mysql";
-$wgDBserver = "database";
+$wgDBserver = "mariadb";
 $wgDBname = "fuerthwiki";
 $wgDBuser = "admin";
 $wgDBpassword = "admin";
@@ -102,14 +102,14 @@ $wgShellLocale = "C.UTF-8";
 # Site language code, should be one of the list in ./languages/data/Names.php
 $wgLanguageCode = "de";
 
-$wgSecretKey = "cc95ebfd206c2b11fda4232209477cc22ecfc541887e60357b16db6e64489f88";
+$wgSecretKey = "87cdf1e498fdc62ec76d49b2667e8d69616938107dd1d776befd5a15e212d17d";
 
 # Changing this will log out all existing sessions.
 $wgAuthenticationTokenVersion = "1";
 
 # Site upgrade key. Must be set to a string (default provided) to turn on the
 # web installer while LocalSettings.php is in place
-$wgUpgradeKey = "fbdb80d00e7d64e3";
+$wgUpgradeKey = "87f63e62f9caf992";
 
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
