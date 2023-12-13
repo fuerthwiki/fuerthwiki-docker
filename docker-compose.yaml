@@ -22,9 +22,6 @@ services:
       # this yaml and uncomment the following line and use compose to restart
       # the mediawiki service
       - ./wiki/LocalSettings.php:/var/www/html/LocalSettings.php
-      #
-      # Enable that next line if you solved that crap with the Dockerfile...
-      # - ./wiki:/var/www/html
   database:
     image: mariadb
     container_name: mariadb
