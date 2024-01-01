@@ -32,7 +32,7 @@ RUN set -eux; \
 		opcache \
 	; \
 	\
-	pecl install apcu; \
+	pecl install APCu; \
 	docker-php-ext-enable \
 		apcu \
 	; \
