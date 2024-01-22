@@ -1,3 +1,5 @@
 ﻿mysql
 _backup/mysql.7z
 _backup
+.idea
+progress.json
